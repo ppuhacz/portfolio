@@ -1,0 +1,30 @@
+@import "../../../styles/variables.scss";
+
+.title-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  .title-wrapper {
+    margin: auto;
+    width: $pageWidth;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .title-personal-info-wrapper {
+      width: 35%;
+      h1 {
+        font-size: 3rem;
+        margin: 0 0 8px 0;
+      }
+      span {
+        line-height: 30px;
+      }
+    }
+
+    .vector-wrapper {
+      transform: translateX(50px);
+    }
+  }
+}
