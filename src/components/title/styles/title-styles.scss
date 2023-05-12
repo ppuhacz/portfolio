@@ -1,10 +1,11 @@
 @import "../../../styles/variables.scss";
 
 .title-container {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: calc(100vh - 50px);
   display: flex;
   align-items: center;
+  margin-bottom: 5px;
   .title-wrapper {
     margin: auto;
     width: $pageWidth;
@@ -14,12 +15,26 @@
 
     .title-personal-info-wrapper {
       width: 35%;
+      text-align: justify;
+
       h1 {
+        font-family: Poppins, Mulish, sans-serif;
         font-size: 3rem;
         margin: 0 0 8px 0;
+        background: -webkit-linear-gradient($greenBackground, $blueBackground);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
       span {
         line-height: 30px;
+        font-size: 1.05rem;
+      }
+
+      .social-media-wrapper {
+        display: flex;
+        gap: 15px;
+        margin-top: 10px;
       }
     }
 

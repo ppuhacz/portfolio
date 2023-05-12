@@ -1,10 +1,16 @@
 @import "../../../styles/variables.scss";
 
 .tech-stack-container {
-  width: 100vw;
-  background-color: $greenBackground;
-
+  margin-top: 80px;
   .tech-stack-wrapper {
+    display: flex;
+    align-items: center;
+
+    p {
+      padding-right: 20px;
+      margin-right: 70px;
+      border-right: 1px solid black;
+    }
 
     ul {
       padding: 0;
@@ -12,11 +18,20 @@
       display: flex;
       list-style-type: none;
       justify-content: center;
-      gap: 150px;
+      gap: 25px;
+
     }
 
     li {
-      height: 50px;
+      display: flex;
+      justify-content: center;
+      box-shadow: 1px 1px 10px #8080808e;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      height: 65px;
+      width: 65px;
+      color: $orangeBackground
     }
   }
 }
