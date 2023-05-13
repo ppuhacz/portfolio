@@ -1,0 +1,8 @@
+@import "./styles/variables.scss";
+
+.gradient-text {
+  background: -webkit-linear-gradient($greenBackground, $blueBackground);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

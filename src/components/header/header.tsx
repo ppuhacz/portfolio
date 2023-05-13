@@ -9,7 +9,7 @@ const Header = () => {
   const listItems = (
     <>
       <li>
-        <a href='#'>Nav 1</a>
+        <a href='#home'>Nav 1</a>
       </li>
       <li>
         <a href='#'>Nav 2</a>
@@ -27,7 +27,7 @@ const Header = () => {
     <header>
       <div className='header-container'>
         <div className='header-logo'>
-          <a href='#title'>
+          <a href='#home'>
             <img src={logo} alt='Patryk Puhacz' width='40' />
           </a>
         </div>

@@ -2,6 +2,7 @@
 
 .title-container {
   width: 100%;
+  padding-top: 50px;
   height: calc(100vh - 50px);
   display: flex;
   align-items: center;
@@ -23,10 +24,7 @@
         font-family: Poppins, Mulish, sans-serif;
         font-size: 3rem;
         margin: 0 0 8px 0;
-        background: -webkit-linear-gradient($greenBackground, $blueBackground);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+
       }
       span {
         line-height: 30px;

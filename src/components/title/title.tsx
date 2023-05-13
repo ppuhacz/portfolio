@@ -8,50 +8,53 @@ import "./styles/title-styles.scss";
 
 const Title = () => {
   return (
-    <div className='title-container'>
-      <motion.div
-        className='title-wrapper'
-        initial={{ y: 50, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1 }}
-      >
-        <div className='title-personal-info-wrapper'>
-          <h1>Patryk Puhacz</h1>
-          <span>
-            Hi, I'm a self-taught, passionate React Front-end Developer based in
-            Koszalin, Poland 🌊
-          </span>
-          <div className='social-media-wrapper'>
+    <section id='home'>
+      <div className='title-container'>
+        <motion.div
+          className='title-wrapper'
+          initial={{ y: 50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+        >
+          <div className='title-personal-info-wrapper'>
+            <h1 className='gradient-text'>Patryk Puhacz</h1>
             <span>
-              <a
-                href='https://www.github.com/ppuhacz'
-                title='github profile'
-                target='_blank'
-                rel='noreferrer'
-              >
-                <img src={githubIcon} alt='github profile' height='35' />
-              </a>
+              Hi, I'm a self-taught, passionate React Front-end Developer based
+              in Koszalin, Poland 🌊
             </span>
-            <span>
-              <a
-                href='https://www.linkedin.com/'
-                title='linkedin profile'
-                target='_blank'
-                rel='noreferrer'
-              >
-                <img src={linkedinIcon} alt='github profile' height='35' />
-              </a>
-            </span>
+            <div className='social-media-wrapper'>
+              <span>
+                <a
+                  href='https://www.github.com/ppuhacz'
+                  title='github profile'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <img src={githubIcon} alt='github profile' height='35' />
+                </a>
+              </span>
+              <span>
+                <a
+                  href='https://www.linkedin.com/'
+                  title='linkedin profile'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <img src={linkedinIcon} alt='github profile' height='35' />
+                </a>
+              </span>
+            </div>
+            <div className='tech-stack-container'>
+              <TechStack />
+            </div>
           </div>
-          <div className='tech-stack-container'>
-            <TechStack />
+          <div className='vector-wrapper'>
+            <img src={developerVector} alt='developer vector' width='600' />
           </div>
-        </div>
-        <div className='vector-wrapper'>
-          <img src={developerVector} alt='developer vector' width='600' />
-        </div>
-      </motion.div>
-    </div>
+        </motion.div>
+      </div>
+    </section>
   );
 };
 
