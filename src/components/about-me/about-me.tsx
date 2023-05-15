@@ -7,19 +7,26 @@ const AboutMe = () => {
   return (
     <section id='about-me'>
       <div className='about-me-container'>
-        <motion.div
-          className='about-me-wrapper'
-          initial={{ y: 50, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-        >
-          <div className='about-me-img'>
+        <div className='about-me-wrapper'>
+          <motion.div
+            className='about-me-img'
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.1 }}
+          >
             <img src={AboutMeImg} alt='Laptop workspace' />
-          </div>
+          </motion.div>
+
           <div className='about-me-text-wrapper'>
-            <div className='about-me-text'>
-              <h4 className='gradient-text'>About me</h4>
+            <motion.div
+              className='about-me-text'
+              initial={{ y: 50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.1 }}
+            >
+              <h4 className='gradient-text'>ABOUT ME</h4>
               <h3>A passionate React Front-end developer</h3>
               <p>
                 Hi, I'm Patryk, a self-taught React Front-end developer with a
@@ -37,9 +44,9 @@ const AboutMe = () => {
                 and strive to create intuitive interfaces that enhance
                 usability.
               </p>
-            </div>
+            </motion.div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

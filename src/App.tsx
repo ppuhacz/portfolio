@@ -5,6 +5,8 @@ import Header from "./components/header/header";
 import CVButton from "./components/cv-button/cv-button";
 import AboutMe from "./components/about-me/about-me";
 import Projects from "./components/projects/projects";
+import Contact from "./components/contact/contact";
+import Footer from "./components/footer/footer";
 
 function App() {
   return (
@@ -15,7 +17,9 @@ function App() {
         <Title />
         <AboutMe />
         <Projects />
+        <Contact />
       </main>
+      <Footer />
     </div>
   );
 }

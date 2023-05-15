@@ -6,7 +6,7 @@ import useIsMobile from "../../hooks/is-mobile/is-mobile";
 const Header = () => {
   const isMobile = useIsMobile();
 
-  const listItems = (
+  const listItems: JSX.Element = (
     <>
       <li>
         <a href='#home'>Home</a>
@@ -18,7 +18,7 @@ const Header = () => {
         <a href='#my-projects'>Projects</a>
       </li>
       <li>
-        <a href='#'>Nav 4</a>
+        <a href='#contact'>Contact</a>
       </li>
     </>
   );

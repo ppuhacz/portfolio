@@ -22,11 +22,16 @@ header {
 
       a {
         text-decoration: none;
-        color: black;
         font-family: Poppins, Mulish, sans-serif;
+        transition: color 0.2s ease-out;
 
+        &:hover {
+          transition: color 0.2s ease-out;
+          color: $blueBackground;
+        }
       }
     }
+
     .header-logo {
       position: relative;
       left: 50%;

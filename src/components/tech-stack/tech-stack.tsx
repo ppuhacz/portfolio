@@ -8,8 +8,13 @@ import typeScriptIcon from "../../img/logos/typescript-logo.svg";
 import reactIcon from "../../img/logos/react-logo.svg";
 import graphqlIcon from "../../img/logos/graphql-logo.svg";
 
+interface TechStack {
+  name: string;
+  logo: string;
+}
+
 const TechStack = () => {
-  const techStack = [
+  const techStack: TechStack[] = [
     {
       name: "HTML5",
       logo: htmlIcon,

@@ -1,0 +1,91 @@
+@import '../../../styles/variables.scss';
+
+.contact-container {
+  width: 100vw;
+  background-color: $secondaryBackground;
+
+  .contact-wrapper {
+    margin: auto;
+    width: $desktopPageWidth;
+    padding: 50px 0;
+
+    h4 {
+      font-family: Poppins, Mulish, sans-serif;
+      color: $blueBackground;
+      font-size: 1.1rem;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .contact-paragraph {
+      font-weight: 700;
+      font-size: 1rem;
+      text-align: justify;
+    }
+
+    .contact-forms {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      margin: 50px 0;
+
+      .contact-form {
+        font-family: Poppins, Mulish, sans-serif;
+        display: flex;
+        align-items: center ;
+        gap: 15px;
+
+        a:not(.send-email, .linkedin-title-link) {
+          display: flex;
+          justify-content:center ;
+          align-items: center;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          box-shadow: $softShadow;
+        }
+
+        .contact-form-description {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+
+          h5, p {
+            margin: 0;
+          }
+
+          h5 {
+            font-weight: 600;
+            font-size: 1.1rem;
+          }
+
+          p {
+            text-decoration: none;
+            font-style: normal;
+            font-size: 0.9rem;
+            cursor: pointer;
+
+            a:hover {
+              color: $blueBackground
+            }
+          }
+
+          a:hover {
+            p {
+              color: $blueBackground
+            }
+          }
+        }
+      }
+
+      @media (min-width: 768px) {
+        flex-direction: row;
+        gap: 100px;
+      }
+    }
+  }
+}
+
+

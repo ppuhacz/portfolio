@@ -15,6 +15,7 @@
 
     .about-me-img {
       margin: auto;
+
       img {
         border-radius: 20px;
         width: $mobilePageWidth;
@@ -53,6 +54,7 @@
     .about-me-wrapper {
       flex-direction: row;
       gap: 40px;
+
       .about-me-img {
         margin: 0;
       }
@@ -62,6 +64,7 @@
       }
     }
   }
+
   @media (min-width: 1440px) {
     .about-me-wrapper {
       width: $desktopPageWidth;

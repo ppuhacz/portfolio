@@ -36,7 +36,7 @@ const Title = () => {
               </span>
               <span>
                 <a
-                  href='https://www.linkedin.com/'
+                  href='https://www.linkedin.com/in/patryk-puhacz-5b5b7a1aa/'
                   title='linkedin profile'
                   target='_blank'
                   rel='noreferrer'

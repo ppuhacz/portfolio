@@ -2,7 +2,7 @@ import React from "react";
 import "./styles/cv-button-styles.scss";
 
 const CVButton = () => {
-  const CVLink =
+  const CVLink: string =
     "https://drive.google.com/file/d/1hUDS3STqHinKQw7TMH8Q76LbmuoEMDvh/view?usp=sharing";
 
   return (
