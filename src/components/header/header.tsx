@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles/header-styles.scss";
-import logo from "../../img/Patryk-Puhacz-logo.svg";
+import logo from "../../img/logos/Patryk-Puhacz-logo.svg";
 import useIsMobile from "../../hooks/is-mobile/is-mobile";
 
 const Header = () => {
@@ -9,13 +9,13 @@ const Header = () => {
   const listItems = (
     <>
       <li>
-        <a href='#home'>Nav 1</a>
+        <a href='#home'>Home</a>
       </li>
       <li>
-        <a href='#'>Nav 2</a>
+        <a href='#about-me'>About me</a>
       </li>
       <li>
-        <a href='#'>Nav 3</a>
+        <a href='#my-projects'>Projects</a>
       </li>
       <li>
         <a href='#'>Nav 4</a>

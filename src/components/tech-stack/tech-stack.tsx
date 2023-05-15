@@ -1,11 +1,10 @@
 import React from "react";
 import "./styles/tech-stack-styles.scss";
-import { motion } from "framer-motion";
 // Importing icons
 import htmlIcon from "../../img/logos/html5-logo.svg";
 import cssIcon from "../../img/logos/css3-logo.svg";
 import sassIcon from "../../img/logos/sass-logo.svg";
-import javascriptIcon from "../../img/logos/javascript-logo.svg";
+import typeScriptIcon from "../../img/logos/typescript-logo.svg";
 import reactIcon from "../../img/logos/react-logo.svg";
 import graphqlIcon from "../../img/logos/graphql-logo.svg";
 
@@ -24,8 +23,8 @@ const TechStack = () => {
       logo: sassIcon,
     },
     {
-      name: "Javascript ES6",
-      logo: javascriptIcon,
+      name: "TypeScript",
+      logo: typeScriptIcon,
     },
     {
       name: "React.js",
@@ -50,14 +49,9 @@ const TechStack = () => {
       <span className='techstack-separator'>
         <p>Techstack</p>
       </span>
-      <motion.div
-        className='tech-stack-wrapper'
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-      >
+      <div className='tech-stack-wrapper'>
         <ul>{techStackMapped}</ul>
-      </motion.div>
+      </div>
     </div>
   );
 };

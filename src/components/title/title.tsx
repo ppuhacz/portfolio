@@ -2,8 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import TechStack from "../tech-stack/tech-stack";
 import developerVector from "../../img/programmer-vector.webp";
-import githubIcon from "../../img/github-icon-gradient.svg";
-import linkedinIcon from "../../img/linkedin-icon-gradient.svg";
+import githubIcon from "../../img/icons/github-icon-gradient.svg";
+import linkedinIcon from "../../img/icons/linkedin-icon-gradient.svg";
 import "./styles/title-styles.scss";
 
 const Title = () => {

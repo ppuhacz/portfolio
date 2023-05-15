@@ -3,14 +3,14 @@
 .title-container {
   width: 100%;
   padding-top: 50px;
-  height: calc(100vh - 50px);
+  height: 100%;
   display: flex;
   align-items: center;
-  margin-bottom: 5px;
+  margin-bottom: 50px;
 
   .title-wrapper {
     margin: auto;
-    width: $pageWidth;
+    width: $titleWidth;
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-around;
@@ -80,5 +80,10 @@
         }
       }
     }
+  }
+
+  @media (min-width: 1440px) {
+    height: calc(100vh - 50px);
+    margin-bottom: 0;
   }
 }

@@ -41,8 +41,6 @@
   @media (min-width: 1440px) {
     .tech-stack-wrapper {
 
-
-
       ul {
         flex-wrap: wrap;
       }
@@ -55,8 +53,7 @@
 
       p {
         padding-right: 20px;
-        margin-right: 70px;
-        margin-bottom: 0;
+        margin: 0 70px 0 0;
         border-bottom: 0;
         border-right: 1px solid black;
       }
