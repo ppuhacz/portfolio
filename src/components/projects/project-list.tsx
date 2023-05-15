@@ -30,7 +30,7 @@ export const projectList: Project[] = [
     technologies: ["React.js", "TypeScript", "Airtable", "Sass"],
   },
   {
-    title: "Onely blog",
+    title: "Onely blog clone",
     demoLink: "https://calm-parfait-2f27b9.netlify.app/",
     githubLink: "https://github.com/ppuhacz/onely-blog-clone-typescript",
     screenshot: onelyScreenshot,
