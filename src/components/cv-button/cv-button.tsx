@@ -6,7 +6,7 @@ const CVButton = () => {
     "https://drive.google.com/file/d/1hUDS3STqHinKQw7TMH8Q76LbmuoEMDvh/view?usp=sharing";
 
   return (
-    <a href={CVLink}>
+    <a href={CVLink} target='_blank' rel='noreferrer noopener'>
       <div className='cv-button-wrapper'>
         <div className='cv-button'>
           <h4>CV</h4>
