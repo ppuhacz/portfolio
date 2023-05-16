@@ -172,8 +172,40 @@
     }
   }
 
+  @media (min-width:1024px) {
+    .project-wrapper:first-child {
+      .project-info {
+        .project-info-description {
+          .project-info-photo {
+            position: relative;
+            &::before {
+              content: url(../../../img/icons/hover-me-icon-v2.webp);
+              transform: scale(0.7);
+              top: -68px;
+              right: -188px;
+              position: absolute;
+              z-index: -1;
+            }
+          }
+        }
+      }
+    }
+  }
+
   @media (min-width: 1240px) {
     width: $desktopPageWidth;
+
+    .project-wrapper:first-child {
+      .project-info {
+        .project-info-description {
+          .project-info-photo {
+            &::before {
+              right: -163px;
+            }
+          }
+        }
+      }
+    }
 
     .project-wrapper{
       max-width: none;
