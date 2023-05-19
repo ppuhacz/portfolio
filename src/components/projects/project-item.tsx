@@ -1,10 +1,51 @@
 import React from "react";
-import { projectList } from "./project-list";
 import { motion } from "framer-motion";
 import newWindow from "../../img/icons/redirect-new-window-icon.svg";
 import githubIcon from "../../img/icons/github-icon-black.svg";
+import { useTranslation } from "react-i18next";
+import TropicarScreenshot from "../../img/screenshots/tropicar-fullpage-screenshot.webp";
+import onelyScreenshot from "../../img/screenshots/onely-fullpage-screenshot.webp";
+import countryDataScreenshot from "../../img/screenshots/countrydata-fullpage-screenshot.webp";
+
+interface Project {
+  title: string;
+  demoLink: string;
+  githubLink: string;
+  screenshot: string;
+  description: JSX.Element;
+  technologies: string[];
+}
 
 const ProjectItems = () => {
+  const { t } = useTranslation();
+
+  const projectList: Project[] = [
+    {
+      title: "Tropicar",
+      demoLink: "https://tropicar.netlify.app/",
+      githubLink: "https://github.com/ppuhacz/tropicar",
+      screenshot: TropicarScreenshot,
+      description: <>{t("Projects.tropicar.description")}</>,
+      technologies: ["React.js", "TypeScript", "Airtable", "Sass"],
+    },
+    {
+      title: "Onely blog clone",
+      demoLink: "https://calm-parfait-2f27b9.netlify.app/",
+      githubLink: "https://github.com/ppuhacz/onely-blog-clone-typescript",
+      screenshot: onelyScreenshot,
+      description: <>{t("Projects.onely.description")}</>,
+      technologies: ["React.js", "TypeScript", "GraphQL", "Sass"],
+    },
+    {
+      title: "Country data",
+      demoLink: "https://voluble-dasik-379a8b.netlify.app/",
+      githubLink: "https://github.com/ppuhacz/country-data",
+      screenshot: countryDataScreenshot,
+      description: <>{t("Projects.countryData.description")}</>,
+      technologies: ["React.js", "CSS3", "Axios"],
+    },
+  ];
+
   const projectsMapped = projectList.map((project) => {
     const {
       title,
@@ -48,7 +89,7 @@ const ProjectItems = () => {
                 <h3>{title.toLocaleUpperCase()}</h3>
               </a>
               <p>{description}</p>
-              <h5>Technologies used:</h5>
+              <h5>{t("Projects.technologies")}</h5>
               <ul className='project-technologies-list'>
                 {technologies.map((tech) => (
                   <li key={tech}>{tech}</li>
@@ -66,7 +107,7 @@ const ProjectItems = () => {
                     alt='open project in new window'
                     height={20}
                   />
-                  Live Demo
+                  {t("Projects.demo")}
                 </a>
                 <a
                   href={githubLink}
@@ -75,7 +116,7 @@ const ProjectItems = () => {
                   className='project-link'
                 >
                   <img src={githubIcon} height={20} alt='Github icon' />
-                  Code
+                  {t("Projects.code")}
                 </a>
               </span>
             </div>

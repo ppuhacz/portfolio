@@ -1,12 +1,29 @@
 @import "../../../styles/variables.scss";
+
 header {
   width: 100%;
-  box-shadow: 2px 2px 10px #0000002d;
+  border-bottom: 1px solid $secondaryBackground;
   height: 50px;
   position: fixed;
   top: 0;
   z-index: 99;
   background-color: #fff;
+
+  select {
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    font-family: Poppins, Mulish, sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: $fontColor;
+  }
+
+  a {
+    font-family: Poppins, Mulish, sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
 
   .header-container {
     padding: 0 35px;
@@ -15,21 +32,69 @@ header {
     height: 100%;
     align-items: center;
 
-    ul {
+    .header-navigation {
+      button {
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+      }
+      .header-navigation-dropdown {
+        position: absolute;
+        left: 0;
+        top: 50px;
+        margin: 0;
+        transition: 0.2s ease-out;
+        width: 100%;
+        overflow: hidden;
+        background-color: #fff;
+        border-bottom: 1px solid $secondaryBackground;
+
+
+        ul {
+          margin:0;
+          padding: 0;
+          list-style-type: none;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          padding: 10px 0;
+
+          li {
+            text-align: center;
+          }
+        }
+      }
+      select {
+        margin: auto;
+        width: auto;
+        padding: 0 5px;
+      }
+
+      .inactive {
+        height: 0;
+      }
+
+      .active{
+        height: 205px;
+      }
+    }
+
+    .header-navigation-list {
       list-style-type: none;
       display: flex;
       gap: 50px;
 
       a {
         text-decoration: none;
-        font-family: Poppins, Mulish, sans-serif;
         transition: color 0.2s ease-out;
 
         &:hover {
           transition: color 0.2s ease-out;
-          color: $blueBackground;
+          color: $fontColor;
         }
       }
+
     }
 
     .header-logo {
@@ -40,6 +105,17 @@ header {
   }
 
   @media (min-width: 768px) {
+    select{
+      color: $navMenuFontColor;
+      option {
+        color: $fontColor
+      }
+    }
+
+    a {
+      color: $navMenuFontColor;
+    }
+
     .header-container {
       .header-logo {
         left: 20px;

@@ -3,8 +3,10 @@ import { motion } from "framer-motion";
 import "./styles/contact-styles.scss";
 import linkedinIcon from "../../img/icons/linked-in-icon-blue-nobg.svg";
 import emailIcon from "../../img/icons/email-icon.svg";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
   return (
     <section id='contact'>
       <div className='contact-container'>
@@ -15,12 +17,8 @@ const Contact = () => {
             viewport={{ once: true }}
             transition={{ duration: 1 }}
           >
-            <h4>CONTACT ME</h4>
-            <p className='contact-paragraph'>
-              Together, let's embark on new and exciting projects, where I can
-              bring my dedication, enthusiasm, and passion for front-end
-              development to create impactful digital experiences.
-            </p>
+            <h4>{t("ContactMe.title")}</h4>
+            <p className='contact-paragraph'>{t("ContactMe.excerpt")}</p>
           </motion.div>
           <div className='contact-forms'>
             <motion.div

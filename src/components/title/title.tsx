@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import TechStack from "../tech-stack/tech-stack";
 import developerVector from "../../img/programmer-vector.webp";
@@ -7,6 +8,8 @@ import linkedinIcon from "../../img/icons/linkedin-icon-gradient.svg";
 import "./styles/title-styles.scss";
 
 const Title = () => {
+  const { t } = useTranslation();
+
   return (
     <section id='home'>
       <div className='title-container'>
@@ -19,10 +22,7 @@ const Title = () => {
         >
           <div className='title-personal-info-wrapper'>
             <h1 className='gradient-text'>Patryk Puhacz</h1>
-            <span>
-              Hi, I'm a self-taught, passionate React Front-end Developer based
-              in Koszalin, Poland 🌊
-            </span>
+            <span>{t("Title.excerpt")}</span>
             <div className='social-media-wrapper'>
               <span>
                 <a

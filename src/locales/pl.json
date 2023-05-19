@@ -1,0 +1,41 @@
+{
+  "Header": {
+    "home": "Strona główna",
+    "aboutMe": "O mnie",
+    "projects": "Projekty",
+    "contact": "Kontakt",
+    "english": "Angielski",
+    "polish": "Polski"
+  },
+  "Title":{
+    "excerpt":"Cześć, jestem React Front-end developerem z zamiłowania, mieszkającym w Koszalinie 🌊"
+  },
+  "AboutMe": {
+    "aboutMe": "O MNIE",
+    "excerpt": "React Front-end developer z zamiłowania",
+    "description": "Cześć, jestem Patryk, samouk w dziedzinie tworzenia stron internetowych z użyciem React. Mam silne zamiłowanie do tworzenia wyjątkowych doświadczeń użytkownika. To, co zaczęło się od hobby, przerodziło się w nieustanne dążenie do zdobywania wiedzy, gdyż stale stawiam sobie wyzwania i rozwijam się. Czerpię radość z pracy nad projektami, które wykraczają poza moją strefę komfortu, co pozwala mi poszerzać umiejętności i być na bieżąco z trendami branżowymi. Dzięki doświadczeniu w HTML5, CSS3, Sass, Typescript, React.js i GraphQL, jestem świetnie przygotowany do tworzenia atrakcyjnych wizualnie i interaktywnych stron internetowych. Skupiam się nie tylko na estetyce, ale również na zapewnieniu płynnego i responsywnego doświadczenia dla użytkowników na różnych urządzeniach. Wierzę w potęgę projektowania skoncentrowanego na użytkowniku i staram się tworzyć intuicyjne interfejsy, które zwiększają użyteczność."
+  },
+  "Projects" : {
+    "title": "Projekty",
+    "description": "Każdy projekt to unikatowy proces twórczy 💻",
+    "technologies": "Użyte technologie:",
+    "demo": "Demo",
+    "code": "Kod",
+    "tropicar": {
+      "title": "Tropicar",
+      "description": "Tropicar to usługa wynajmu egzotycznych samochodów, która umożliwia rezerwację wymarzonego auta na dowolny okres. Oferty samochodów są pobierane z bazy AirTable za pomocą API AirTable. Strona internetowa umożliwia uzyskanie dodatkowych informacji o dowolnym z samochodów, sprawdzenie listy cen każdego z nich oraz rezerwację za pomocą wbudowanego formularza, który automatycznie oblicza kwotę do zapłaty i sprawdza poprawność wprowadzonych danych.      "
+    },
+    "onely" : {
+      "title": "Klon bloga Onely",
+      "description": "Klon bloga onely.com/blog stworzona tylko w celach ćwiczeniowych. Jest połączona z GraphQL CMS i używa rich text do wyświetlania sformatowanych postów na blogu. Strona umożliwia wyświetlanie wszystkich postów, które można przeszukiwać za pomocą kategorii lub autorów. Istnieje również strona, na której wyświetleni są wszyscy autorzy należący do zespołu, z której można przejść do profilu każdego autora, który zawiera krótkie pytania i odpowiedzi oraz wyświetla wszystkie posty napisane przez wybranego autora."
+    },
+    "countryData": {
+      "title": "Dane o krajach",
+      "description": "Dane o krajach to mój pierwszy projekt w React.js, który jest dość prosty. Wykorzystuje bibliotekę axios do pobierania danych z API dotyczącego światowych danych. Następnie iteruje przez wszystkie pobrane kraje, obsługuje ewentualne błędy i brakujące informacje, a następnie renderuje każdy kraj w osobnym bloku. Istnieje również prostą funkcję wyszukiwania oraz wykres słupkowy generowany na podstawie dostarczonych danych przy użyciu biblioteki ChartJS."
+    }
+  },
+  "ContactMe" : {
+    "title": "SKONTAKTUJ SIĘ ZE MNĄ",
+    "excerpt": "Wyruszmy razem na nowe i ekscytujące projekty, gdzie mogę wykorzystać moje oddanie, entuzjazm i pasję do front-end developmentu, aby tworzyć wpływowe doświadczenia cyfrowe."
+  }
+}
