@@ -10,6 +10,9 @@ header {
   background-color: #fff;
 
   select {
+    min-width: 100px;
+    cursor: pointer;
+    text-align: center;
     background-color: transparent;
     border: 0;
     outline: none;
@@ -17,6 +20,7 @@ header {
     font-weight: 600;
     font-size: 0.9rem;
     color: $fontColor;
+
   }
 
   a {
@@ -76,7 +80,7 @@ header {
       }
 
       .active{
-        height: 205px;
+        height: 215px;
       }
     }
 

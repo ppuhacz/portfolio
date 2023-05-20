@@ -22,7 +22,7 @@ const Header = () => {
     if (storedLanguage) {
       i18n.changeLanguage(storedLanguage);
     }
-  });
+  }, [i18n]);
 
   const handleOnClick = () => {
     setIsDropdownActive(!isDropdownActive);
