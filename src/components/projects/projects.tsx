@@ -10,8 +10,8 @@ const Projects = () => {
     <section id='projects'>
       <div className='projects-container'>
         <div className='projects-title'>
-          <h4>{t("Projects.title")}</h4>
-          <h3>{t("Projects.description")}</h3>
+          <h3>{t("Projects.title")}</h3>
+          <h2>{t("Projects.description")}</h2>
         </div>
         <ProjectItems />
       </div>

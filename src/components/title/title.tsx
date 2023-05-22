@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import TechStack from "../tech-stack/tech-stack";
-import developerVector from "../../img/programmer-vector.webp";
+import developerVector from "../../img/programmer-vector-600px.webp";
 import githubIcon from "../../img/icons/github-icon-gradient.svg";
 import linkedinIcon from "../../img/icons/linkedin-icon-gradient.svg";
 import "./styles/title-styles.scss";
@@ -31,7 +31,12 @@ const Title = () => {
                   target='_blank'
                   rel='noreferrer'
                 >
-                  <img src={githubIcon} alt='github profile' height='35' />
+                  <img
+                    src={githubIcon}
+                    alt='github profile'
+                    height='35'
+                    width='35'
+                  />
                 </a>
               </span>
               <span>
@@ -41,7 +46,12 @@ const Title = () => {
                   target='_blank'
                   rel='noreferrer'
                 >
-                  <img src={linkedinIcon} alt='github profile' height='35' />
+                  <img
+                    src={linkedinIcon}
+                    alt='github profile'
+                    height='35'
+                    width='35'
+                  />
                 </a>
               </span>
             </div>
@@ -50,7 +60,12 @@ const Title = () => {
             </div>
           </div>
           <div className='vector-wrapper'>
-            <img src={developerVector} alt='developer vector' width='600' />
+            <img
+              src={developerVector}
+              alt='developer vector'
+              width='600'
+              height='auto'
+            />
           </div>
         </motion.div>
       </div>

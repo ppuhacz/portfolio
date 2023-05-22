@@ -9,7 +9,7 @@ const CVButton = () => {
     <a href={CVLink} target='_blank' rel='noreferrer noopener'>
       <div className='cv-button-wrapper'>
         <div className='cv-button'>
-          <h4>CV</h4>
+          <h2>CV</h2>
         </div>
       </div>
     </a>

@@ -42,10 +42,6 @@ const Header = () => {
       <li>
         <a href='#contact'>{t("Header.contact")}</a>
       </li>
-      <select value={i18n.language} onChange={handleLanguageChange}>
-        <option value='en'>{t("Header.english")}</option>
-        <option value='pl'>{t("Header.polish")}</option>
-      </select>
     </>
   );
 
@@ -59,9 +55,13 @@ const Header = () => {
         </div>
         <div className='header-navigation'>
           {!isMobile ? (
-            <>
-              <ul className='header-navigation-list'>{listItems}</ul>
-            </>
+            <div className='header-navigation-list'>
+              <ul>{listItems}</ul>
+              <select value={i18n.language} onChange={handleLanguageChange}>
+                <option value='en'>{t("Header.english")}</option>
+                <option value='pl'>{t("Header.polish")}</option>
+              </select>
+            </div>
           ) : (
             <>
               <button
@@ -89,7 +89,13 @@ const Header = () => {
                   isDropdownActive ? "active" : "inactive"
                 }`}
               >
-                <ul className='header-navigation-dropdown-list'>{listItems}</ul>
+                <div className='header-navigation-dropdown-list'>
+                  <ul>{listItems}</ul>
+                  <select value={i18n.language} onChange={handleLanguageChange}>
+                    <option value='en'>{t("Header.english")}</option>
+                    <option value='pl'>{t("Header.polish")}</option>
+                  </select>
+                </div>
               </div>
             </>
           )}

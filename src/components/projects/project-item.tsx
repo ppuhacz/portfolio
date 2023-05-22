@@ -78,9 +78,11 @@ const ProjectItems = () => {
               <a href={demoLink} target='_blank' rel='noreferrer noopener'>
                 <img
                   src={screenshot}
-                  alt='Screenshot of tropicar landing page'
+                  alt="Screenshot of project's landing page"
                   className='project-screenshot'
                   loading='lazy'
+                  width='450px'
+                  height='100%'
                 />
               </a>
             </div>
@@ -89,7 +91,7 @@ const ProjectItems = () => {
                 <h3>{title.toLocaleUpperCase()}</h3>
               </a>
               <p>{description}</p>
-              <h5>{t("Projects.technologies")}</h5>
+              <h4>{t("Projects.technologies")}</h4>
               <ul className='project-technologies-list'>
                 {technologies.map((tech) => (
                   <li key={tech}>{tech}</li>

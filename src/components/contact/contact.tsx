@@ -17,7 +17,7 @@ const Contact = () => {
             viewport={{ once: true }}
             transition={{ duration: 1 }}
           >
-            <h4>{t("ContactMe.title")}</h4>
+            <h3>{t("ContactMe.title")}</h3>
             <p className='contact-paragraph'>{t("ContactMe.excerpt")}</p>
           </motion.div>
           <div className='contact-forms'>
@@ -42,7 +42,7 @@ const Contact = () => {
                   target='_blank'
                   rel='noopener noreferrer'
                 >
-                  <h5>Linkedin</h5>
+                  <h4>Linkedin</h4>
                   <p>Patryk Puhacz</p>
                 </a>
               </div>
@@ -58,7 +58,7 @@ const Contact = () => {
                 <img src={emailIcon} alt='email address' width={25} />
               </a>
               <div className='contact-form-description'>
-                <h5>E-mail</h5>
+                <h4>E-mail</h4>
                 <p>
                   <a href='mailto:ppuhacz@gmail.com' className='send-email'>
                     ppuhacz@gmail.com

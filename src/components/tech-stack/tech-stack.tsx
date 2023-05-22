@@ -44,7 +44,7 @@ const TechStack = () => {
   const techStackMapped = techStack.map(({ name, logo }) => {
     return (
       <li key={name} title={name}>
-        <img src={logo} alt={`${name} logo`} height='40' />
+        <img src={logo} alt={`${name} logo`} height='40' width='40' />
       </li>
     );
   });

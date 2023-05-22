@@ -9,10 +9,11 @@
     width: $desktopPageWidth;
     padding: 50px 0;
 
-    h4 {
+    h3 {
       font-family: Poppins, Mulish, sans-serif;
       color: $blueBackground;
       font-size: 1.1rem;
+      margin: 23px 0;
     }
 
     p {
@@ -50,18 +51,18 @@
         .contact-form-description {
           display: flex;
           flex-direction: column;
-          gap: 5px;
 
-          h5, p {
+          h4, p {
             margin: 0;
           }
 
-          h5 {
+          h4 {
             font-weight: 600;
             font-size: 1.1rem;
           }
 
           p {
+            margin-top: 5px;
             text-decoration: none;
             font-style: normal;
             font-size: 0.9rem;

@@ -8,14 +8,14 @@
   .projects-title {
     text-align: center;
 
-    h4 {
+    h3 {
       margin: 0;
       font-family: Poppins, Mulish, sans-serif;
       color: $blueBackground;
       font-size: 1.1rem;
     }
 
-    h3 {
+    h2 {
       margin: 5px 0;
       font-size: 1.2rem;
     }
@@ -58,7 +58,7 @@
           width: calc(100% - 40px);
           text-align: justify;
 
-          h3, h5 {
+          h3, h4 {
             text-align: center;
             margin: 0 0 10px 0;
             font-family: Poppins, Mulish, sans-serif;
@@ -68,8 +68,9 @@
             color: $blueBackground
           }
 
-          h5 {
+          h4 {
             margin-top: 20px;
+            font-size: 13.28px;
           }
 
           p {

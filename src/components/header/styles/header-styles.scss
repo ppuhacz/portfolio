@@ -19,8 +19,12 @@ header {
     font-family: Poppins, Mulish, sans-serif;
     font-weight: 600;
     font-size: 0.9rem;
-    color: $fontColor;
+    transition: 0.15s ease-out;
 
+    &:hover {
+      color: $fontColor;
+      transition: 0.15s ease-out;
+    }
   }
 
   a {
@@ -48,12 +52,19 @@ header {
         left: 0;
         top: 50px;
         margin: 0;
-        transition: 0.2s ease-out;
+        transition: 0.15s ease-out;
         width: 100%;
         overflow: hidden;
         background-color: #fff;
         border-bottom: 1px solid $secondaryBackground;
 
+        &-list {
+          text-align: center;
+
+          select {
+            margin-top: 10px;
+          }
+        }
 
         ul {
           margin:0;
@@ -85,20 +96,24 @@ header {
     }
 
     .header-navigation-list {
-      list-style-type: none;
       display: flex;
       gap: 50px;
 
+      ul {
+        list-style-type: none;
+        display: flex;
+        gap: 50px;
+      }
+
       a {
         text-decoration: none;
-        transition: color 0.2s ease-out;
+        transition: 0.15s ease-out;
 
         &:hover {
-          transition: color 0.2s ease-out;
+          transition: 0.15s ease-out;
           color: $fontColor;
         }
       }
-
     }
 
     .header-logo {
