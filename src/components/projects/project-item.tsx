@@ -3,14 +3,15 @@ import { motion } from "framer-motion";
 import newWindow from "../../img/icons/redirect-new-window-icon.svg";
 import githubIcon from "../../img/icons/github-icon-black.svg";
 import { useTranslation } from "react-i18next";
-import TropicarScreenshot from "../../img/screenshots/tropicar-fullpage-screenshot.webp";
+import tomRysScreenshot from "../../img/screenshots/tomrys-fullpage-screenshot.webp";
+import tropicarScreenshot from "../../img/screenshots/tropicar-fullpage-screenshot.webp";
 import onelyScreenshot from "../../img/screenshots/onely-fullpage-screenshot.webp";
 import countryDataScreenshot from "../../img/screenshots/countrydata-fullpage-screenshot.webp";
 
 interface Project {
   title: string;
   demoLink: string;
-  githubLink: string;
+  githubLink: string | undefined;
   screenshot: string;
   description: JSX.Element;
   technologies: string[];
@@ -21,10 +22,18 @@ const ProjectItems = () => {
 
   const projectList: Project[] = [
     {
+      title: "Tom-Rys",
+      demoLink: "https://tom-rys.pl/",
+      githubLink: undefined,
+      screenshot: tomRysScreenshot,
+      description: <>{t("Projects.tomRys.description")}</>,
+      technologies: ["HTML", "CSS", "JavaScript"],
+    },
+    {
       title: "Tropicar",
       demoLink: "https://tropicar.netlify.app/",
       githubLink: "https://github.com/ppuhacz/tropicar",
-      screenshot: TropicarScreenshot,
+      screenshot: tropicarScreenshot,
       description: <>{t("Projects.tropicar.description")}</>,
       technologies: ["React.js", "TypeScript", "Airtable", "Sass"],
     },
@@ -111,15 +120,17 @@ const ProjectItems = () => {
                   />
                   {t("Projects.demo")}
                 </a>
-                <a
-                  href={githubLink}
-                  target='_blank'
-                  rel='noreferrer noopener'
-                  className='project-link'
-                >
-                  <img src={githubIcon} height={20} alt='Github icon' />
-                  {t("Projects.code")}
-                </a>
+                {githubLink && (
+                  <a
+                    href={githubLink}
+                    target='_blank'
+                    rel='noreferrer noopener'
+                    className='project-link'
+                  >
+                    <img src={githubIcon} height={20} alt='Github icon' />
+                    {t("Projects.code")}
+                  </a>
+                )}
               </span>
             </div>
           </motion.div>

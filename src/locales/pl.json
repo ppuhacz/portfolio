@@ -21,6 +21,10 @@
     "technologies": "Użyte technologie:",
     "demo": "Demo",
     "code": "Kod",
+    "tomRys": {
+      "title": "Tom-Rys",
+      "description": "Tom-Rys to mój pierwszy projekt komercyjny wykonany dla lokalnego hydraulika. Został napisany w Vanilla JS, CSS3 i HTML, bez użycia żadnych dodatkowych bibliotek aby nie narazić klienta na potencjalne dodatkowe koszta w przyszłości."
+    },
     "tropicar": {
       "title": "Tropicar",
       "description": "Tropicar to usługa wynajmu egzotycznych samochodów, która umożliwia rezerwację wymarzonego auta na dowolny okres. Oferty samochodów są pobierane z bazy AirTable za pomocą API AirTable. Strona internetowa umożliwia uzyskanie dodatkowych informacji o dowolnym z samochodów, sprawdzenie listy cen każdego z nich oraz rezerwację za pomocą wbudowanego formularza, który automatycznie oblicza kwotę do zapłaty i sprawdza poprawność wprowadzonych danych.      "

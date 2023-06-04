@@ -21,6 +21,10 @@
     "technologies": "Technologies used:",
     "demo": "Live Demo",
     "code": "Code",
+    "tomRys": {
+      "title":"Tom-Rys",
+      "description": "Tom-Rys is my first commercial project done for a local plumber. It was written in Vanilla JS, CSS3, and HTML, without using any additional libraries to avoid potential additional costs for the client in the future."
+    },
     "tropicar": {
       "title": "Tropicar",
       "description": "Tropicar is an exotic car rental service which lets you book your dream car for any duration. Car offers are fetched from the AirTable Base using the AirTable API. Website lets you gain more info about any of the car, check the price lists of each one of them and also lets you book it via the built-in booking form that auto-calculates how much you have to pay and validates if all inputs are valid."
