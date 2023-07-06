@@ -43,7 +43,7 @@ const ProjectItems = () => {
       githubLink: "https://github.com/ppuhacz/onely-blog-clone-typescript",
       screenshot: onelyScreenshot,
       description: <>{t("Projects.onely.description")}</>,
-      technologies: ["React.js", "TypeScript", "GraphQL", "Sass"],
+      technologies: ["React.js", "Angular", "TypeScript", "GraphQL", "Sass"],
     },
     {
       title: "Country data",

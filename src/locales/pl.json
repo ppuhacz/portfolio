@@ -31,7 +31,7 @@
     },
     "onely" : {
       "title": "Klon bloga Onely",
-      "description": "Klon bloga onely.com/blog stworzona tylko w celach ćwiczeniowych. Jest połączona z GraphQL CMS i używa rich text do wyświetlania sformatowanych postów na blogu. Strona umożliwia wyświetlanie wszystkich postów, które można przeszukiwać za pomocą kategorii lub autorów. Istnieje również strona, na której wyświetleni są wszyscy autorzy należący do zespołu, z której można przejść do profilu każdego autora, który zawiera krótkie pytania i odpowiedzi oraz wyświetla wszystkie posty napisane przez wybranego autora."
+      "description": "Klon bloga onely.com/blog stworzona tylko w celach ćwiczeniowych. Jest połączona z GraphQL CMS i używa rich text do wyświetlania sformatowanych postów na blogu. Strona umożliwia wyświetlanie wszystkich postów, które można przeszukiwać za pomocą kategorii lub autorów. Istnieje również strona, na której wyświetleni są wszyscy autorzy należący do zespołu, z której można przejść do profilu każdego autora, który zawiera krótkie pytania i odpowiedzi oraz wyświetla wszystkie posty napisane przez wybranego autora. Blog zostawił napisy w React.js a potem przepisany w Angularze w celach ćwiczeniowych. Wersję angularową można znaleźć na moim profilu Github."
     },
     "countryData": {
       "title": "Dane o krajach",

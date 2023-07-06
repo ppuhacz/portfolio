@@ -31,7 +31,7 @@
     },
     "onely" : {
       "title": "Onely Blog Clone",
-      "description": "Onely blog is a clone site of onely.com/blog that was made for exercise purpose only. It is connected to GraphQL CMS and uses rich text rendered to display formatted blog posts. Website lets you display all posts that can be searched via categories or authors. There is a page that displays all authors who are a part of the team, from where you can access each author's profile page which includes a short Q&A and display all posts written by the chosen author."
+      "description": "Onely blog is a clone site of onely.com/blog that was made for exercise purpose only. It is connected to GraphQL CMS and uses rich text rendered to display formatted blog posts. Website lets you display all posts that can be searched via categories or authors. There is a page that displays all authors who are a part of the team, from where you can access each author's profile page which includes a short Q&A and display all posts written by the chosen author. The blog has been written using React.js and then rewrote to Angular for practice purposes. Angular version can be found on my github"
     },
     "countryData": {
       "title" :"Country Data",
